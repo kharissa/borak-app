@@ -1,33 +1,171 @@
-.App {
-  text-align: center;
+body, html {
+max-height: 100vh;
+margin: 0;
+padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body.noScroll {
+  overflow: hidden
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header  */
+
+.navbar{
+
+}
+
+/* Chat Display  */
+
+.chat-history { 
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 0px;
+}
+
+/* Chat Message ROW  */
+
+.chat {
+  margin: 10px;
+  padding: 10px 0px 10px 0px;
+}
+
+/* Chat Message CONTENT  */
+
+.chat-content {
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  font-weight: 500;
+  max-width: 450px;
+}
+
+.chat-content-right {
+  background-color: #ff7e71;
+  color: white;
+  font-weight: 600;
+}
+
+/* Chat Message MEDIA  */
+
+.chat-avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30%;
+  border: 2px solid white;
+}
+
+.chat-timestamp{
+  font-size:.6em;
+}
+
+.chat-username {
+  font-size: .8em;
+  text-transform: lowercase;
+
+}
+
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+/* Users List Display */
+
+.users-list {
+  height: 100vh;
+  min-width: 190px;
+  background-image: linear-gradient(to right bottom,#d75a88, #ff7e71, #ffb25f);
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.users-list ul {
+  margin-left: -35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.users-list ul li {
+  list-style: none;
+}
+
+.users-list ul li::before {
+  color: #2d9b2d;
+  /* color of bullet or square */
+
+  content: "\2022";
+  /* Unicode of character to precede the list item */
+
+  font-size: 1em;
+  /* em or %*/
+
+  padding-right: 0.5em;
+  /* use em*/
+
+  position: relative;
+  top: 0em;
+  /* use em or % */
+}
+
+.brand-name{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Send Message Input */
+
+.message-input{
+  border-radius: 10px;
+  resize: none
+}
+
+.btn-chat-app {
+  color: #ffffff;
+  background-color: #FF7E71;
+  border-color: #FF7E71;
+  font-weight: bold;
+}
+
+.btn-chat-app:hover,
+.btn-chat-app:focus,
+.btn-chat-app:active,
+.btn-chat-app.active,
+.open .dropdown-toggle.btn-chat-app {
+  color: #ffffff;
+  background-color: #FFB25F;
+  border-color: #FFB25F;
+}
+
+.btn-chat-app:active,
+.btn-chat-app.active,
+.open .dropdown-toggle.btn-chat-app {
+  background-image: none;
+}
+
+.btn-chat-app.disabled,
+.btn-chat-app[disabled],
+fieldset[disabled] .btn-chat-app,
+.btn-chat-app.disabled:hover,
+.btn-chat-app[disabled]:hover,
+fieldset[disabled] .btn-chat-app:hover,
+.btn-chat-app.disabled:focus,
+.btn-chat-app[disabled]:focus,
+fieldset[disabled] .btn-chat-app:focus,
+.btn-chat-app.disabled:active,
+.btn-chat-app[disabled]:active,
+fieldset[disabled] .btn-chat-app:active,
+.btn-chat-app.disabled.active,
+.btn-chat-app[disabled].active,
+fieldset[disabled] .btn-chat-app.active {
+  background-color: #FFB25F;
+  border-color: #FFB25F;
+}
+
+.btn-chat-app .badge {
+  color: #FFB25F;
+  background-color: #ffffff;
 }
