@@ -52,7 +52,7 @@ export default class Login extends React.Component {
         return (
             <Modal show={this.state.show} onHide={this.handleClose}>
                 <Modal.Header>
-                    <Modal.Title>Welcome to Next Chat!</Modal.Title>
+                    <Modal.Title>Welcome to Borak!</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Your username has been randomly generated:
                     <Form noValidate validated={validated}>
