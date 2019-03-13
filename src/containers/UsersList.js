@@ -1,15 +1,13 @@
 import React from 'react'
 
-
 export default class UsersList extends React.Component {
- 
-    
     render() {
        const users = this.props.users;
         return (
             <div>
-                <div className="mb-2">
-                    <span className="brand-name">Borak</span><em>app</em>
+                <div className="my-2 text-center">
+                    <span className="brand-name">Borak</span>
+                    <p className="brand-tagline">Real-Time Group Chat</p>
                     <hr />
                 </div>
                 <div>

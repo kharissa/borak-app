@@ -76,10 +76,16 @@ body.noScroll {
 
 .users-list {
   height: 100vh;
-  min-width: 190px;
+  min-width: 200px;
   background-image: linear-gradient(to right bottom,#d75a88, #ff7e71, #ffb25f);
   padding: 10px;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .users-list {
+    height: auto;
+  }
 }
 
 .users-list ul {
@@ -92,20 +98,11 @@ body.noScroll {
 
 .users-list ul li::before {
   color: #2d9b2d;
-  /* color of bullet or square */
-
   content: "\2022";
-  /* Unicode of character to precede the list item */
-
   font-size: 1em;
-  /* em or %*/
-
   padding-right: 0.5em;
-  /* use em*/
-
   position: relative;
   top: 0em;
-  /* use em or % */
 }
 
 .brand-name{
@@ -113,7 +110,12 @@ body.noScroll {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-weight: 700;
-  text-align: center;
+}
+
+.brand-tagline{
+  font-size: .8em;
+  font-style: italic;
+  color: #f1f1f1
 }
 
 /* Send Message Input */

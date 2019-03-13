@@ -73,7 +73,7 @@ export default class Chatroom extends React.Component {
         return (
             <Container className="App" fluid>
                 <Row className="chatroom">
-                    <Col md={2} className="users-list p-3">
+                    <Col sm={4} md={2} className="users-list p-3">
                         <UsersList users={users}/>
                     </Col>
                     <Col>
